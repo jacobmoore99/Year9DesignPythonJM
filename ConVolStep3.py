@@ -5,7 +5,7 @@ name = input ("What is your name: ") #takes users name
 radius = input("\n\tInput radius(cm): ") #input
 radius = (int)(radius) #cast to int
 
-height = input ("Input height(cm): ") #input
+height = input ("\n\tInput height(cm): ") #input
 height = (int)(height) #input
 #what imputs are needed to calculate the volume of a cylinder?
 
