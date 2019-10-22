@@ -2,14 +2,14 @@ import tkinter as tk
 
 print ("Start Program")
 root = tk.Tk() #builds your main window
-
+root.title ("Tkinter Practice")
 #widget is an element in a GUI
 #button, textbox, slider, input box, image
 #step 1: construct the widget
 
-btn1 = tk.Button(root, width = 10, height = 3)
+btn1 = tk.Button(root, width = 100, height = 3)
 #step 2: configure the widget
-btn1.config(text = "I am a button")
+btn1.config(text = "First Attempt At a Button")
 #step 3: place the widget - pack(), grid()
 btn1.pack()
 
