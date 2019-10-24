@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import *
 
 print ("Start Program")
 root = tk.Tk() #builds your main window
@@ -16,6 +17,12 @@ btn1.pack()
 output = tk.Text(root, width = 100, height = 20)
 output.config()
 output.pack();
+
+variable = StringVar(root)
+variable.set("Jacob") # default value
+
+w = OptionMenu(root, variable, "Jacob", "Thomas", "Moore", "Po", "Gratis")
+w.pack()
 
 root.mainloop()
 
