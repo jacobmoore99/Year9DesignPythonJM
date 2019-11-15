@@ -51,20 +51,26 @@ w.grid(row = 1, column = 7)
 
 btn1 = tk.Button(master, width = 10, height = 2)
 #step 2: configure the widget
-btn1.config(text = "Result")
+btn1.config(text = "Result", font=("Anton", 18, "bold"), highlightbackground = "grey")
 #step 3: place the widget - pack(), grid()
 btn1.grid(row = 1, column = 8)
 
 btn2 = tk.Button(master, width = 30, height = 2)
 #step 2: configure the widget
-btn2.config(text = "Slope", fg="green", font=("Anton", 18))
+btn2.config(text = "Slope", font=("Anton", 18, "bold"), highlightbackground = "green")
 #step 3: place the widget - pack(), grid()
 btn2.grid(row = 2, column = 0, columnspan = 5)
 
 btn3 = tk.Button(master, width = 30, height = 2)
 #step 2: configure the widget
-btn3.config(text = "Distance", fg="blue", font=("Anton", 18))
+btn3.config(text = "Distance", font=("Anton", 18, "bold"), highlightbackground = "blue")
 #step 3: place the widget - pack(), grid()
 btn3.grid(row = 2, column = 5, columnspan = 4)
+
+w = Label(master, text="Slope formula:", fg="green", font=("Arial", 18))
+w.grid(row = 3, column = 0, columnspan = 2)
+
+w = Label(master, text="Distance formula:", fg="blue", font=("Arial", 18))
+w.grid(row = 3, column = 5, columnspan = 2)
 
 mainloop()
