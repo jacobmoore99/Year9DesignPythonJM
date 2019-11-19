@@ -73,4 +73,12 @@ w.grid(row = 3, column = 0, columnspan = 2)
 w = Label(master, text="Distance formula:", fg="blue", font=("Arial", 18))
 w.grid(row = 3, column = 5, columnspan = 2)
 
+output = tk.Text(master, width = 60, height = 20)
+output.config(bg = "green")
+output.grid(row = 4, column = 0, columnspan = 5)
+
+output = tk.Text(master, width = 60, height = 20)
+output.config(bg = "blue")
+output.grid(row = 4, column = 5, columnspan = 5)
+
 mainloop()
