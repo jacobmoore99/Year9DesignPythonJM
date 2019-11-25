@@ -9,45 +9,45 @@ master.title ("Slope/Distance Calculator")
 w = Label(master, text="Slope/Distance Calculator", fg="red", font=("Arial", 30))
 w.grid(row = 0, column = 0, columnspan = 9, sticky = "NESW")
 
-w = Label(master, text="x1=", fg="red", font=("Arial", 18))
-w.grid(row = 1, column = 0)
+w1 = Label(master, text="x1=", fg="red", font=("Arial", 18))
+w1.grid(row = 1, column = 0)
 
 variable = StringVar(master)
 variable.set("0") # default value
 
-w = OptionMenu(master, variable, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
-w.config(bg = "red")
-w.grid(row = 1, column = 1)
+w2 = OptionMenu(master, variable, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
+w2.config(bg = "red")
+w2.grid(row = 1, column = 1)
 
-w = Label(master, text="x2=", fg="red", font=("Arial", 18))
-w.grid(row = 1, column = 2)
-
-variable = StringVar(master)
-variable.set("0") # default value
-
-w = OptionMenu(master, variable, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
-w.config(bg = "red")
-w.grid(row = 1, column = 3)
-
-w = Label(master, text="y1=", fg="red", font=("Arial", 18))
-w.grid(row = 1, column = 4)
+w3 = Label(master, text="x2=", fg="red", font=("Arial", 18))
+w3.grid(row = 1, column = 2)
 
 variable = StringVar(master)
 variable.set("0") # default value
 
-w = OptionMenu(master, variable, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
-w.config(bg = "red")
-w.grid(row = 1, column = 5)
+w4 = OptionMenu(master, variable, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
+w4.config(bg = "red")
+w4.grid(row = 1, column = 3)
 
-w = Label(master, text="y2=", fg="red", font=("Arial", 18))
-w.grid(row = 1, column = 6)
+w5 = Label(master, text="y1=", fg="red", font=("Arial", 18))
+w5.grid(row = 1, column = 4)
 
 variable = StringVar(master)
 variable.set("0") # default value
 
-w = OptionMenu(master, variable, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
-w.config(bg = "red")
-w.grid(row = 1, column = 7)
+w6 = OptionMenu(master, variable, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
+w6.config(bg = "red")
+w6.grid(row = 1, column = 5)
+
+w7 = Label(master, text="y2=", fg="red", font=("Arial", 18))
+w7.grid(row = 1, column = 6)
+
+variable = StringVar(master)
+variable.set("0") # default value
+
+w8 = OptionMenu(master, variable, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
+w8.config(bg = "red")
+w8.grid(row = 1, column = 7)
 
 btn1 = tk.Button(master, width = 10, height = 2)
 #step 2: configure the widget
@@ -67,11 +67,11 @@ btn3.config(text = "Distance", font=("Anton", 18, "bold"), highlightbackground =
 #step 3: place the widget - pack(), grid()
 btn3.grid(row = 2, column = 5, columnspan = 4)
 
-w = Label(master, text="Slope formula:", fg="green", font=("Arial", 18))
-w.grid(row = 3, column = 0, columnspan = 2)
+w9 = Label(master, text="Slope formula:", fg="green", font=("Arial", 18))
+w9.grid(row = 3, column = 0, columnspan = 2)
 
-w = Label(master, text="Distance formula:", fg="blue", font=("Arial", 18))
-w.grid(row = 3, column = 5, columnspan = 2)
+w10 = Label(master, text="Distance formula:", fg="blue", font=("Arial", 18))
+w10.grid(row = 3, column = 5, columnspan = 2)
 
 output = tk.Text(master, width = 60, height = 20)
 output.config(bg = "green")
